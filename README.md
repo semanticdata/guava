@@ -1,3 +1,3 @@
-# guava
+# [guava](https://semanticdata.github.io/guava/)
 
-a zola website
+a [Zola](https://www.getzola.org/) website

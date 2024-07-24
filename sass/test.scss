@@ -1,0 +1,123 @@
+:root {
+    --dark-grey: #333;
+    --light-grey: #eee;
+    --medium-grey: #ddd;
+    --grey: #666;
+    --text-color: #000;
+    --text-color-alt: #fff;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+header {
+    height: 60px;
+    min-height: 60px;
+    background: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-alt);
+}
+
+main.container {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    max-width: 120ch;
+    margin-inline: auto;
+    aside.leftbar {
+        // width: 250px;
+        min-width: 250px;
+        background: var(--light-grey);
+        text-align: center;
+        padding: 20px;
+    }
+    section.content {
+        // overflow: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+    aside.rightbar {
+        // width: 200px;
+        min-width: 200px;
+        background: var(--medium-grey);
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+footer {
+    background: var(--grey);
+    height: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-alt);
+}
+
+@media (max-width: 1000px) {
+    body {
+        display: block;
+    }
+    main.container {
+        flex-wrap: wrap;
+        flex-grow: 0;
+
+        aside.leftbar,
+        aside.rightbar {
+            flex: 1 1 auto;
+        }
+        aside.leftbar {
+            order: 1;
+        }
+        aside.rightbar {
+            order: 2;
+        }
+        section.content {
+            order: 3;
+        }
+    }
+    footer {
+        order: 4;
+    }
+}
+
+@media (max-width: 700px) {
+    main.container {
+        aside.lefbar,
+        aside.rightbar {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 100%;
+    }
+    main.container {
+        flex-grow: 1;
+        aside.leftbar,
+        aside.rightbar {
+            // background: palevioletred;
+            width: 100%;
+        }
+    }
+}

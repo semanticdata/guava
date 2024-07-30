@@ -1,1 +1,6 @@
+@use "variables" as vars;
 @use "base";
+
+body {
+    background: vars.$orange-light-background;
+}

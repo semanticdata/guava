@@ -43,12 +43,10 @@ window.onload = function () {
                     backlinks.length
                 } ${backlinks.length > 1 ? "backlinks" : "backlink"}`;
                 document.querySelector(".backlinks").onclick = function () {
-                    document
-                        .getElementById("backlinks-list")
-                        .scrollIntoView({
-                            behaviour: "smooth",
-                            block: "center"
-                        });
+                    document.getElementById("backlinks-list").scrollIntoView({
+                        behaviour: "smooth",
+                        block: "center"
+                    });
                 };
                 let injectedBacklinks =
                     "<h3 id='backlinks-list'>Backlinks</h3><ul>\n";
@@ -138,7 +136,7 @@ window.onload = function () {
     }
 
     function indexInject(path, title) {
-        var l = link(path, "monotome.md", title);
+        var l = link(path, "readme.md", title);
         var subjectNode = el("div", { classList: "subject" });
         subjectNode.appendChild(l);
         subjectNode.id = path + "readme";

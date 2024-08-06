@@ -1,21 +1,26 @@
 #!/bin/env node
-var fs = require("fs")
-var args = process.argv.slice(2)
+var fs = require("fs");
+var args = process.argv.slice(2);
 
-var help = `usage: publish path/to/file.md [title]`
+var help = `usage: publish path/to/file.md [title]`;
 if (args.length === 0) {
-    console.error("publish: no arguments")
-    console.error(help)
-    return
+  console.error("publish: no arguments");
+  console.error(help);
+  return;
 }
 
-var titlePattern = /\w*\/(.+).md/
-var source = args[0]
-var match = source.match(titlePattern)
-if (!match) { console.error("publish: invalid file path"); return }
-var title = match[1].replace(/(\\\s)|\s+/g, "-")
+var titlePattern = /\w*\/(.+).md/;
+var source = args[0];
+var match = source.match(titlePattern);
+if (!match) {
+  console.error("publish: invalid file path");
+  return;
+}
+var title = match[1].replace(/(\\\s)|\s+/g, "-");
 // the title was provided as an argument
-if (typeof args[1] !== "undefined")  { title = args[1] }
+if (typeof args[1] !== "undefined") {
+  title = args[1];
+}
 
 var template = `
 <html>
@@ -32,8 +37,8 @@ var template = `
     <body>
         <div class="content"></div>
     </body>
-</html>`
+</html>`;
 
 fs.writeFile(`${title}.html`, template, function done(err) {
-    if (err) console.error(err) 
-})
+  if (err) console.error(err);
+});

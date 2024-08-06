@@ -1,53 +1,38 @@
 {
-    "root": "",
-    "title": "monotome",
-    "subjects": {
-        "example": [
-            "first.md",
-            "page1.md",
-            "page2.md",
-            "page3.md",
-            "readme.md"
-        ],
-        "example/sub1": [
-            "first.md",
-            "readme.md"
-        ],
-        "example/sub1/sub3": [
-            "first.md",
-            "readme.md"
-        ],
-        "example/sub2": [
-            "first.md",
-            "readme.md"
-        ]
-    },
-    "redirects": {},
-    "missing": [],
-    "backlinks": {
-        "page1": [],
-        "example/page1.md": [
-            {
-                "src": "example/page2.md",
-                "dst": "page1",
-                "desc": "page1",
-                "wiki": true
-            },
-            {
-                "src": "example/page3.md",
-                "dst": "page1",
-                "desc": "page1",
-                "wiki": true
-            }
-        ],
-        "page2": [],
-        "example/page2.md": [
-            {
-                "src": "example/page3.md",
-                "dst": "page2",
-                "desc": "page2",
-                "wiki": true
-            }
-        ]
-    }
+  "root": "",
+  "title": "monotome",
+  "subjects": {
+    "example": ["first.md", "page1.md", "page2.md", "page3.md", "readme.md"],
+    "example/sub1": ["first.md", "readme.md"],
+    "example/sub1/sub3": ["first.md", "readme.md"],
+    "example/sub2": ["first.md", "readme.md"]
+  },
+  "redirects": {},
+  "missing": [],
+  "backlinks": {
+    "page1": [],
+    "example/page1.md": [
+      {
+        "src": "example/page2.md",
+        "dst": "page1",
+        "desc": "page1",
+        "wiki": true
+      },
+      {
+        "src": "example/page3.md",
+        "dst": "page1",
+        "desc": "page1",
+        "wiki": true
+      }
+    ],
+    "page2": [],
+    "example/page2.md": [
+      {
+        "src": "example/page3.md",
+        "dst": "page2",
+        "desc": "page2",
+        "wiki": true
+      }
+    ]
+  }
 }

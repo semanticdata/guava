@@ -1,8 +1,9 @@
-function read (f, cb) {
-    fetch(f).then(function(res) {
-        return res.text()
+function read(f, cb) {
+  fetch(f)
+    .then(function (res) {
+      return res.text();
     })
-    .then(function(body) {
-        cb(marked(body))
-    })
+    .then(function (body) {
+      cb(marked(body));
+    });
 }

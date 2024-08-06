@@ -175,7 +175,7 @@ window.onload = function () {
         open(
             window.location.hash
                 ? window.location.hash.substring(1)
-                : "./monotome.md",
+                : "./readme.md",
             { changeHistory: true, scrollTo: true }
         );
     }

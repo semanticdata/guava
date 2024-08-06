@@ -132,7 +132,7 @@ window.addEventListener("DOMContentLoaded", function () {
           subject.indexOf(term) >= 0 &&
           index.subjects[subject].indexOf("readme.md") >= 0,
       )
-      .map((s) => s + "/monotome.md");
+      .map((s) => s + "/readme.md");
     if (searchQueue.length > 0) {
       emit("open-file", { file: searchQueue[0] });
       previousMatch = true;

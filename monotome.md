@@ -1,4 +1,4 @@
-# monotome
+# monotome.md
 
 i wanted to start a wiki so i made this
 

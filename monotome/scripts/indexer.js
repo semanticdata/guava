@@ -121,7 +121,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // some browsers have / as a search hotkey: use -- (or Tab) to type /
     term = term.replace("--", "/");
     if (term[0] === ".") {
-      emit("open-file", { file: "./monotome.md" });
+      emit("open-file", { file: "./readme.md" });
       return;
     }
     let previousMatch = false;

@@ -121,7 +121,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // some browsers have / as a search hotkey: use -- (or Tab) to type /
     term = term.replace("--", "/");
     if (term[0] === ".") {
-      emit("open-file", { file: "./readme.md" });
+      emit("open-file", { file: "./monotome.md" });
       return;
     }
     let previousMatch = false;
@@ -132,7 +132,7 @@ window.addEventListener("DOMContentLoaded", function () {
           subject.indexOf(term) >= 0 &&
           index.subjects[subject].indexOf("readme.md") >= 0,
       )
-      .map((s) => s + "/readme.md");
+      .map((s) => s + "/monotome.md");
     if (searchQueue.length > 0) {
       emit("open-file", { file: searchQueue[0] });
       previousMatch = true;

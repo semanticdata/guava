@@ -161,7 +161,7 @@ window.onload = function () {
     });
     // open the linked location, else start page
     open(
-      window.location.hash ? window.location.hash.substring(1) : "./readme.md",
+      window.location.hash ? window.location.hash.substring(1) : "./monotome.md",
       { changeHistory: true, scrollTo: true },
     );
   }

@@ -358,6 +358,11 @@ input:hover {
   background: #999;
 }
 
+/* additional styles */
+code a {
+  color: black;
+}
+
 /* ipad max-width */
 @media screen and (max-width: 768px) {
   .content {

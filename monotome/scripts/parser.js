@@ -145,8 +145,8 @@ window.onload = function () {
     };
     // set page title
     document.title = index.title;
-    // add start to index
-    indexInject(".", "start");
+    // add monotome to index
+    indexInject(".", "monotome");
     Object.keys(index.subjects).forEach(function (subject) {
       indexInject(subject, subject);
       var ul = el("ul");

@@ -71,7 +71,7 @@ window.onload = function () {
       }
       document.querySelector(".breadcrumb").innerHTML = decodeURI(f);
       document.querySelector(".content").innerHTML = body;
-      document.querySelector(".content").scrollIntoView();
+      // document.querySelector(".content").scrollIntoView();
       document.body.querySelectorAll("a").forEach(function (a) {
         // if relative markdown link
         if (/^[^\/].*\.md$/.test(a.href)) {

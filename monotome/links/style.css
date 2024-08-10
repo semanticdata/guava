@@ -62,7 +62,7 @@ a {
   color: var(--white);
   text-decoration: none;
   transition: opacity var(--time) ease-in-out;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted var(--light);
 }
 a:hover {
   opacity: 0.7;
@@ -156,7 +156,7 @@ table {
 td,
 th {
   padding: 0.5rem;
-  border: 1px white solid;
+  border: 1px var(--light) solid;
 }
 
 .index ul {
@@ -173,7 +173,7 @@ th {
 }
 
 .breadcrumb {
-  border-bottom: 1px white solid;
+  border-bottom: 1px var(--light) solid;
   padding: 1rem 0;
   z-index: 10;
   background: var(--dark);
@@ -253,6 +253,7 @@ body {
 .sidebar {
   /* border: solid red; */
   min-width: 12rem;
+  width: 12rem;
   transition: all 0.4s ease-out;
   /* transform: scaleX(1); */
   /* transform-origin: right; */
@@ -289,6 +290,7 @@ body {
 body.sided .sidebar {
   /* display: none; */
   transform: scaleX(0);
+  min-width: 0;
   width: 0;
 }
 
@@ -298,10 +300,12 @@ body.sided .sidebar {
   } */
   .sidebar {
     transform: scaleX(0);
+    min-width: 0;
     width: 0;
   }
   body.sided .sidebar {
     transform: scaleX(1);
     min-width: 12rem;
+    width: 12rem;
   }
 }

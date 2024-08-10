@@ -133,9 +133,6 @@ ul,
 ol {
   margin-left: 1rem;
 }
-ul {
-  list-style-image: url("../media/dot.svg");
-}
 
 li > ul,
 li > ol {

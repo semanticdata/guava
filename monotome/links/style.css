@@ -19,7 +19,7 @@
   --white: #000;
   --code-bg: #fff;
   --time: 100ms;
-  --external: #ffe4b5;
+  --external: #6b4f1f;
 }
 
 html {
@@ -29,15 +29,6 @@ html {
   background-color: var(--dark);
   color: var(--light);
   line-height: 1.5;
-}
-
-body {
-  /* display: grid;
-  grid-template-areas:
-    "side head"
-    "side content";
-  grid-template-columns: 13rem 1fr;
-  grid-template-rows: 4rem 1fr; */
 }
 
 h4 {
@@ -88,6 +79,12 @@ pre {
   overflow: scroll;
 }
 
+blockquote p,
+blockquote p a {
+  color: white;
+  /* background: black; */
+}
+
 code {
   color: var(--code-bg);
   background: var(--light);
@@ -106,6 +103,7 @@ pre {
 pre code {
   border-style: dotted;
   color: var(--dark);
+  color: var(--light);
   padding: unset;
   border-radius: unset;
   background: unset;

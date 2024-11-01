@@ -1,9 +1,10 @@
+> We are in the middle of renaming the project from Monotome to Guava. Find the original readme [here](monotome.md).
+
 # [Guava](https://semanticdata.github.io/guava/) Wiki
 
 What is it? A personal wiki, a digital garden, an online notebook? Well, yes, kind of. Guava Wiki aims to be a simple and easy-to-use personal wiki.
 
-| ![screenshot](media/screen.png) |
-| --- |
+<!-- screenshot omitted -->
 
 ## Get Started
 
@@ -34,8 +35,7 @@ All features are under active development. Some will be temporarily unavailable.
 
 Monotome supports a link syntax for inlining other monotome articles (i.e. plain markdown files) into a source article. This technique is commonly known as [transclusion](https://en.wikipedia.org/wiki/Transclusion).
 
-| ![inlined-wiki](https://user-images.githubusercontent.com/3862362/100735405-717b0080-33d1-11eb-9911-8e210a5cb713.gif) |
-| --- |
+<!-- screenshot omitted -->
 
 Any link `<a>` with an href referring to a local file & which has the anchor tag attribute `download` will be inlined into the document. That is, if one file has some content followed by `<a href="example/first.md" download></a>`, then the contents of `example/first.md` is inlined in place of the anchor tag, at the position of the tag definition.
 
@@ -43,8 +43,7 @@ Any link `<a>` with an href referring to a local file & which has the anchor tag
 
 Monotome keeps track of backlinks, or incoming links from one article inside monotome to another. To discover backlinks, run `node monotome/bin/generate.js`. For a taste of what backlinks look like in practice, see the gif below.
 
-| ![monotome backlinks](https://user-images.githubusercontent.com/3862362/89731988-c58d5e00-da4b-11ea-82fc-0fa2f20b2505.gif) |
-| --- |
+<!-- screenshot omitted -->
 
 ### Wiki syntax (searchlinks)
 

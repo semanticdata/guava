@@ -34,7 +34,7 @@ All features are under active development. Some will be temporarily unavailable.
 
 ### Inlined Articles
 
-Monotome supports a link syntax for inlining other monotome articles (i.e. plain markdown files) into a source article. This technique is commonly known as [transclusion](https://en.wikipedia.org/wiki/Transclusion).
+Guava supports a link syntax for inlining other Guava articles (i.e. plain markdown files) into a source article. This technique is commonly known as [transclusion](https://en.wikipedia.org/wiki/Transclusion).
 
 <!-- screenshot omitted -->
 
@@ -42,22 +42,19 @@ Any link `<a>` with an href referring to a local file & which has the anchor tag
 
 ### Backlinks
 
-Monotome keeps track of backlinks, or incoming links from one article inside monotome to another. To discover backlinks, run `node monotome/bin/generate.js`. For a taste of what backlinks look like in practice, see the gif below.
+Guava keeps track of backlinks, or incoming links from one article inside Guava to another. To discover backlinks, run `node monotome/bin/generate.js`. For a taste of what backlinks look like in practice, see the gif below.
 
 <!-- screenshot omitted -->
 
 ### Wiki syntax (searchlinks)
 
-Monotome has support for the common `[[wiki]]` syntax, although it implements it in a slightly
-different way. When you use wiki syntax on a word or phrase in your wiki, a link will be created.
-Clicking that link will perform a search on the subjects and articles of a wiki and navigate to
-the first result of that search.
+Guava has support for the common `[[wiki]]` syntax, although it implements it in a slightly different way. When you use wiki syntax on a word or phrase in your wiki, a link will be created.
 
-If the result was not what you wanted, you can page the searchlink results with the left and
-right arrow keys.
+Clicking that link will perform a search on the subjects and articles of a wiki and navigate to the first result of that search.
 
-Just as `[article](subject/file.md)` links are tracked with backlinks, so too are `[[wiki]]`
-links.
+If the result was not what you wanted, you can page the searchlink results with the left and right arrow keys.
+
+Just as `[article](subject/file.md)` links are tracked with backlinks, so too are `[[wiki]]` links.
 
 ## Changes from Upstream
 
@@ -72,10 +69,8 @@ Guava has implemented the following changes compared to [monotome](https://githu
 
 ## Acknowledgements
 
-Guava is built on the shoulders of other amazing open souce projects. We'd like to extend a special thanks to [cblgh](https://github.com/cblgh) for his work on [monotome](https://github.com/cblgh/monotome) which helped us get this project started.
+Guava is built on the shoulders of other amazing open souce projects. We'd like to extend a special thanks to [cblgh](https://github.com/cblgh) for his work on [monotome](https://github.com/cblgh/monotome) which this project is based on.
 
 We have the pleasure of using [Marked](https://github.com/markedjs/marked) as our markdown parser and [Inter UI](https://github.com/inter-ui/inter-ui) as our font of choice. Available under the [MIT License](https://github.com/markedjs/marked/blob/master/LICENSE.md) and the [SIL OPEN FONT LICENSE Version 1.1](https://github.com/philipbelesky/inter-ui/blob/main/LICENSE.txt) respectively.
 
-## License
-
-Guava Wiki is distributed under the [AGPL-3.0 License](LICENSE).
+Guava, as well as monotome is distributed under the [AGPL-3.0 License](LICENSE).

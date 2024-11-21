@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function toggleIcon() {
     var collapseIcon = sidebarCollapse.querySelector("#collapseIcon");
-    var isSmallScreen = window.innerWidth < 768;
-    if (isSmallScreen) {
-      collapseIcon.classList.add("fa-arrow-right");
-      collapseIcon.classList.remove("fa-arrow-left");
-    } else {
-      collapseIcon.classList.add("fa-arrow-left");
-      collapseIcon.classList.remove("fa-arrow-right");
-    }
+    // var isSmallScreen = window.innerWidth < 900;
+    // if (isSmallScreen) {
+    //   collapseIcon.classList.add("fa-arrow-right");
+    //   collapseIcon.classList.remove("fa-arrow-left");
+    // } else {
+    //   collapseIcon.classList.add("fa-arrow-left");
+    //   collapseIcon.classList.remove("fa-arrow-right");
+    // }
   }
   // Initial check
   toggleIcon();

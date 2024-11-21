@@ -23,17 +23,13 @@
 
   <style>
     .main-container {
-      /* width: 90vw; */
-      /* margin: 0 auto; */
-      /* height: 90vh; */
-      /* border: 2px solid rgba(0, 0, 0, .4); */
       display: flex;
       transition: 1s ease;
     }
 
     .sidebar {
-      width: 30%;
-      height: 100%;
+      width: 20%;
+      /* height: 100%; */
       /* background-color: #54a; */
       transition: 1s ease;
       position: relative;
@@ -41,10 +37,12 @@
     }
 
     .content {
-      width: 70%;
-      height: 100%;
+      width: 80%;
+      /* height: 100%; */
       /* background-color: #ccc; */
       transition: 1s ease;
+      max-width: 85ch;
+      margin-inline: auto;
     }
 
     button {
@@ -61,11 +59,18 @@
     }
 
     .content_large {
-      width: 90% !important;
+      width: 90%;
     }
 
     .sidebar_small {
-      width: 10%;
+      /* transform: scaleX(0); */
+      min-width: 0;
+      width: 0;
+    }
+
+    .sidebar_small .breadcrumb,
+    .sidebar_small .index {
+      display: none;
     }
 
     .navigation {

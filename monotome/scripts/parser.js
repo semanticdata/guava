@@ -129,7 +129,7 @@ window.onload = function () {
   }
 
   function indexInject(path, title) {
-    var linkPath = path === "." ? "monotome.md" : "readme.md";
+    var linkPath = path === "." ? "guava.md" : "readme.md";
     var l = link(path, linkPath, title);
     var subjectNode = el("div", { classList: "subject" });
     subjectNode.appendChild(l);
@@ -146,7 +146,7 @@ window.onload = function () {
     // set page title
     document.title = index.title;
     // add monotome to index
-    indexInject(".", "monotome");
+    indexInject(".", "guava");
     Object.keys(index.subjects).forEach(function (subject) {
       indexInject(subject, subject);
       var ul = el("ul");
@@ -167,7 +167,7 @@ window.onload = function () {
     open(
       window.location.hash
         ? window.location.hash.substring(1)
-        : "./monotome.md",
+        : "./guava.md",
       { changeHistory: true, scrollTo: true }
     );
   }

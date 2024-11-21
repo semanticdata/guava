@@ -2,10 +2,25 @@
   "root": "",
   "title": "monotome",
   "subjects": {
-    "example": ["first.md", "page1.md", "page2.md", "page3.md", "readme.md"],
-    "example/sub1": ["first.md", "readme.md"],
-    "example/sub1/sub3": ["first.md", "readme.md"],
-    "example/sub2": ["first.md", "readme.md"]
+    "example": [
+      "first.md",
+      "page1.md",
+      "page2.md",
+      "page3.md",
+      "readme.md"
+    ],
+    "example/sub1": [
+      "first.md",
+      "readme.md"
+    ],
+    "example/sub1/sub3": [
+      "first.md",
+      "readme.md"
+    ],
+    "example/sub2": [
+      "first.md",
+      "readme.md"
+    ]
   },
   "redirects": {},
   "missing": [],

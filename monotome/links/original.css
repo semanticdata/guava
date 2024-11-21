@@ -12,17 +12,6 @@
     --external: #ffe4b5;
 }
 
-/* invert color theme */
-:root {
-    --light: #000;
-    --dark: #fefefe;
-    --grey: #5d5d5d;
-    --white: #0d0d0d;
-    --code-bg: #f2f2f2;
-    --time: 100ms;
-    --external: #881ca8;
-}
-
 /* Reset.css Courtesy of XXIIVV */
 * {
     margin: 0;
@@ -53,13 +42,26 @@
     opacity: 1.0;
     color: #000;
     padding: 10px;
+    /* Safari */
 }
 
 body {
-    background: var(--dark);
+    background: #000;
     overflow-x: hidden;
     transition: opacity 150ms;
     opacity: 1 !important
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+a {
+    cursor: pointer;
 }
 
 ul {
@@ -75,7 +77,6 @@ code {
     color: var(--light);
     background: var(--dark);
     font-family: monospace;
-    font-size: 0.9rem;
 }
 
 svg {
@@ -90,11 +91,14 @@ strong {
 
 a code {
     background: none;
-    color: var(--light);
+    color: white;
     padding: 0;
 }
 
 /* main */
+em {
+    font-style: italic;
+}
 
 del {
     text-decoration: line-through;
@@ -172,7 +176,7 @@ a {
     -ms-transition: opacity var(--time) ease-in-out;
     -o-transition: opacity var(--time) ease-in-out;
     transition: opacity var(--time) ease-in-out;
-    border-bottom: 1px dotted var(--white);
+    border-bottom: 1px dotted white;
 }
 
 a:hover {
@@ -193,11 +197,10 @@ blockquote,
 pre {
     padding: 0.5rem 2rem;
     margin: 1rem 0;
-    border-left: var(--white) .2rem solid;
-    /* background: var(--dark); */
-    background: rgb(0, 0, 0, 0.05);
-    /* width: 100%; */
-    /* overflow: scroll; */
+    border-left: var(--white) .1rem solid;
+    background: #0f0f0f;
+    width: 100%;
+    overflow: scroll;
 }
 
 code {
@@ -280,16 +283,12 @@ table {
 td,
 th {
     padding: 0.5rem;
-    border: 1px var(--white) solid;
+    border: 1px white solid;
 }
 
 .content {
-    margin: 0 auto;
+    margin: 3rem auto 6rem auto;
     width: 40rem;
-}
-
-.sidebar {
-    border-right: 1px solid;
 }
 
 .index {
@@ -323,7 +322,7 @@ th {
 .breadcrumb {
     position: fixed;
     /* show the breadcrumb while we scroll through the index */
-    border-bottom: 1px var(--white) solid;
+    border-bottom: 1px white solid;
     padding: 1rem 0.1em 0.5rem 0.6rem;
     width: 12.25rem;
     z-index: 10;
@@ -437,8 +436,4 @@ input:hover {
     /* } */
     /*  */
     /* a { border-bottom: 1px white solid; } */
-}
-
-code>a {
-    color: var(--dark);
 }

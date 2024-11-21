@@ -11,6 +11,7 @@
   --time: 100ms;
   --external: #ffe4b5;
 }
+
 /* invert theme colors */
 :root {
   --dark: #fefefe;
@@ -39,13 +40,13 @@ h5 {
   font-style: italic;
 }
 
-h1 + h2,
-h1 + h3,
-h2 + h3 {
+h1+h2,
+h1+h3,
+h2+h3 {
   margin-top: 0;
 }
 
-h1 + h4 {
+h1+h4 {
   margin-top: 2rem;
 }
 
@@ -55,16 +56,18 @@ a {
   transition: opacity var(--time) ease-in-out;
   border-bottom: 1px dotted var(--light);
 }
+
 a:hover {
   opacity: 0.7;
   text-decoration: underline;
 }
+
 a:visited {
   color: var(--white);
 }
+
 a[href^="http://"],
-a[href^="https://"]
-{
+a[href^="https://"] {
   color: var(--external);
   border-bottom: none;
 }
@@ -118,12 +121,12 @@ img {
   margin-right: auto;
 }
 
-h1 + ul,
-h2 + ul,
-h3 + ul,
-h1 + ol,
-h2 + ol,
-h3 + ol {
+h1+ul,
+h2+ul,
+h3+ul,
+h1+ol,
+h2+ol,
+h3+ol {
   padding-top: 1rem;
 }
 
@@ -132,8 +135,8 @@ ol {
   margin-left: 1rem;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
   margin-left: 2rem;
 }
 
@@ -159,10 +162,12 @@ th {
   list-style-type: none;
   padding-left: 1rem;
 }
+
 .index li:before {
   content: "";
   margin-right: 0;
 }
+
 .index a {
   border-bottom: none !important;
 }
@@ -222,6 +227,7 @@ input {
   cursor: pointer;
   border: #333 solid 0.1rem;
 }
+
 button:hover,
 input:hover {
   color: black;
@@ -232,7 +238,7 @@ code a {
   color: black;
 }
 
-#backlinks-list + ul {
+#backlinks-list+ul {
   padding: 0;
 }
 
@@ -245,6 +251,7 @@ body {
   display: flex;
   /* border: dashed rebeccapurple; */
 }
+
 .sidebar {
   /* border: solid red; */
   min-width: 12rem;
@@ -253,6 +260,7 @@ body {
   /* transform: scaleX(1); */
   /* transform-origin: right; */
 }
+
 .content {
   /* border: solid darkblue; */
   flex-grow: 1;
@@ -260,28 +268,34 @@ body {
   width: 100%;
   /* overflow-x: hidden; */
 }
+
 .backlinks {
   /* border: solid darkgreen; */
   top: 50%;
   display: none;
 }
+
 .breadcrumb {
   /* border: solid gold; */
 }
+
 .index {
   /* border: solid purple; */
 }
+
 .header {
   /* border: solid magenta; */
   /* width: var(--width); */
   width: 100%;
 }
+
 .main-container {
   min-height: 100%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
+
 body.sided .sidebar {
   /* display: none; */
   transform: scaleX(0);
@@ -290,6 +304,7 @@ body.sided .sidebar {
 }
 
 @media (max-width: 768px) {
+
   /* #sidebarCollapse span {
     display: none;
   } */
@@ -298,6 +313,7 @@ body.sided .sidebar {
     min-width: 0;
     width: 0;
   }
+
   body.sided .sidebar {
     transform: scaleX(1);
     min-width: 12rem;

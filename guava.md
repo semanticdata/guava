@@ -1,7 +1,4 @@
-> [!NOTE]
-> We are in the middle of renaming the project from _Monotome_ to _Guava_. Find the original readme [here](monotome.md).
-
-# [Guava](https://semanticdata.github.io/guava/) Wiki
+# [Guava](https://semanticdata.github.io/guava/) Wiki (maybe not really a wiki)
 
 What is it? A personal wiki, a digital garden, an online notebook? Well, yes, kind of. Guava Wiki aims to be a simple and easy-to-use personal wiki.
 
@@ -26,7 +23,7 @@ The current homepage is `monotome.md`. Other content is structured into **Subjec
 
 ## Features
 
-All features are under active development. Some will be temporarily unavailable.
+> All features are under active development. Some will be temporarily unavailable.
 
 - Inlined Articles
 - Backlinks

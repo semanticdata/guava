@@ -20,7 +20,7 @@ What is it? A personal wiki, a digital garden, an online notebook? Well, yes, ki
 
 ## Structure
 
-The current homepage is `monotome.md`. Other content is structured into **Subjects** (top level directories) and **Articles** (markdown files) contained within them. Each `readme.md` file within a subject folder is the overview page for that subject.
+The current homepage is `guava.md`. Other content is structured into **Subjects** (top level directories) and **Articles** (markdown files) contained within them. Each `readme.md` file within a subject folder is the overview page for that subject.
 
 **Subjects** are ordered into a simple directory structure which is mirrored by `index.json`. Which can be filled by hand if you want to avoid running a script. You can also run `node monotome/bin/generate.js`, which will update `index.json` for you.
 
@@ -61,15 +61,14 @@ links.
 
 ## Changes from Upstream
 
-Guava Wiki implements the following changes compared to [monotome](https://github.com/cblgh/monotome):
+Guava has implemented the following changes compared to [monotome](https://github.com/cblgh/monotome):
 
-- Changed default homepage from `readme.md` to `monotome.md`.
+- Changed default homepage from `readme.md` to `guava.md`.
 - Added automatic static site deployment using GitHub Actions.
-- Modernized HTML boilerplate. Introduced new redesigned layout using the [flexbox model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) instead of the [grid model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout).
-- Simplified CSS styles. Removing unnecessary resets and obsolete styles.
-- Introduced new responsive mobile design with collapsible sidebar. Removed many unnecessary `@media` queries.
-- Fixed many small bugs and typos.
-- Fixed some accessibility issues. Wikilinks were not visible due to their color.
+<!-- - Modernized HTML boilerplate. Introduced new redesigned layout using the [flexbox model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) instead of the [grid model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout). -->
+<!-- - Simplified CSS styles. Removing unnecessary resets and obsolete styles. -->
+<!-- - Introduced new responsive mobile design with collapsible sidebar. Removed many unnecessary `@media` queries. -->
+<!-- - Fixed some accessibility issues. Wikilinks were not visible due to their color. -->
 
 ## Acknowledgements
 

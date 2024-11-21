@@ -1,6 +1,6 @@
 # [Guava](https://semanticdata.github.io/guava/) Wiki (maybe not really a wiki)
 
-What is it? A personal wiki, a digital garden, an online notebook? Well, yes, kind of. Guava Wiki aims to be a simple and easy-to-use personal wiki.
+What is it? A personal wiki, a digital garden, an online notebook? Well, yes, kind of. Guava aims to be a simple and easy-to-use personal knowledge base. It is based on [monotome](https://github.com/cblgh/monotome), which aims to be similar to a wiki. It is a work is progress and changes should be expected.
 
 <!-- screenshot omitted -->
 

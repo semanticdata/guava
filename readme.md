@@ -1,9 +1,9 @@
 > [!NOTE]
 > We are in the middle of renaming the project from _Monotome_ to _Guava_. Find the original readme [here](monotome.md).
 
-# [Guava](https://semanticdata.github.io/guava/) Wiki
+# [Guava](https://semanticdata.github.io/guava/)
 
-What is it? A personal wiki, a digital garden, an online notebook? Well, yes, kind of. Guava Wiki aims to be a simple and easy-to-use personal wiki.
+What is it? A personal wiki, a digital garden, an online notebook? Well, yes, kind of. Guava aims to be a simple and easy-to-use personal knowledge base. It is based on [monotome](https://github.com/cblgh/monotome), which aims to be similar to a wiki. It is a work is progress and changes should be expected.
 
 <!-- screenshot omitted -->
 

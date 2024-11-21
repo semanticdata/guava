@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guava Wiki - Test</title>
+  <meta name="description" content="Guava Wiki aims to be a simple and easy-to-use personal wiki." />
+  <!-- <link rel="stylesheet" href="monotome/links/test.css" /> -->
+  <!-- <link rel="stylesheet" href="monotome/links/style.css" /> -->
+  <!-- <link rel="stylesheet" href="monotome/links/instance.css"> -->
+  <!-- <link rel="stylesheet" href="monotome/links/reference.css" /> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.0/marked.min.js"
+  integrity="sha512-5553JQkjVvt29nqpQgqj1e6TqlcfYbEQt5a+m+ztrD+G+Lhm0F4CyvfdjwtD6ATDHy5LvCfvsXQL8fzWJDQWkQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="monotome/scripts/marked.js"></script>
+  <script src="monotome/scripts/emitter.js"></script>
+  <script src="monotome/scripts/reader.js"></script>
+  <script src="monotome/scripts/parser.js"></script>
+  <script src="monotome/scripts/indexer.js"></script>
+  <script src="monotome/scripts/visualiser.js"></script>
+
+  <style>
+    .main-container {
+      /* width: 90vw; */
+      /* margin: 0 auto; */
+      /* height: 90vh; */
+      /* border: 2px solid rgba(0, 0, 0, .4); */
+      display: flex;
+      transition: 1s ease;
+    }
+
+    .sidebar {
+      width: 30%;
+      height: 100%;
+      /* background-color: #54a; */
+      transition: 1s ease;
+      position: relative;
+      border-right: 2px solid rgba(0, 0, 0, .4);
+    }
+
+    .content {
+      width: 70%;
+      height: 100%;
+      /* background-color: #ccc; */
+      transition: 1s ease;
+    }
+
+    button {
+      position: absolute;
+      border: none;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .3);
+      left: 100%;
+      top: 3rem;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+
+    .content_large {
+      width: 90% !important;
+    }
+
+    .sidebar_small {
+      width: 10%;
+    }
+
+    .navigation {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 8rem;
+      background: var(--white);
+      color: var(--dark);
+      padding: .5rem;
+      margin: .5rem;
+
+      border-radius: 0px;
+      height: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="sidebar">
+      <div class="breadcrumb"></div>
+      <div class="index"></div>
+      <button type="button" id="sidebarCollapse">M</button>
+    </div>
+
+    <div class="content"></div>
+    <input class="navigation">
+    <div class="backlinks"></div>
+  </div>
+
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    const mainContent = document.querySelector('.content');
+    document.querySelector('#sidebarCollapse').onclick = function () {
+      sidebar.classList.toggle('sidebar_small');
+      mainContent.classList.toggle('content_large')
+    }
+  </script>
+</body>
+
+</html>

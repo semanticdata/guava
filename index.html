@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guava Wiki</title>
   <meta name="description" content="Guava Wiki aims to be a simple and easy-to-use personal wiki." />
-  <link rel="stylesheet" href="monotome/links/style.css" />
+  <!-- <link rel="stylesheet" href="monotome/links/style.css" /> -->
   <!-- <link rel="stylesheet" href="monotome/links/instance.css"> -->
-  <!-- <link rel="stylesheet" href="monotome/links/reference.css" /> -->
+  <link rel="stylesheet" href="monotome/links/reference.css" />
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.0/marked.min.js"
   integrity="sha512-5553JQkjVvt29nqpQgqj1e6TqlcfYbEQt5a+m+ztrD+G+Lhm0F4CyvfdjwtD6ATDHy5LvCfvsXQL8fzWJDQWkQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
@@ -31,15 +31,18 @@
 <body>
   <div class="sidebar">
     <div class="breadcrumb"></div>
-    <div class="index"></div>
+    <details open>
+      <summary>Index</summary>
+      <div class="index"></div>
+    </details>
   </div>
 
-  <button type="button" id="sidebarCollapse" class="bg-turbo-yellow text-sidebar btn">
+  <!-- <button type="button" id="sidebarCollapse" class="bg-turbo-yellow text-sidebar btn">
     <i id="collapseIcon" class="fa-arrow-right fas"></i>
     <span></span>
-  </button>
+  </button> -->
 
-  <!-- <div class="main-container">
+  <div class="main-container">
     <div class="header">
       <button type="button" id="sidebarCollapse" class="bg-turbo-yellow text-sidebar btn">
         <i id="collapseIcon" class="fa-arrow-left fas"></i>
@@ -49,11 +52,11 @@
     <div class="content"></div>
     <input class="navigation" />
     <div class="backlinks"></div>
-  </div> -->
+  </div>
 
-  <div class="content"></div>
+  <!-- <div class="content"></div>
   <input class="navigation"></div>
-  <div class="backlinks"></div>
+  <div class="backlinks"></div> -->
 
   <script src="sidebar-toggle.js"></script>
 </body>

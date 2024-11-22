@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guava Wiki - Test</title>
+  <meta name="description" content="Guava Wiki aims to be a simple and easy-to-use personal wiki." />
+  <!-- <link rel="stylesheet" href="monotome/links/test.css" /> -->
+  <!-- <link rel="stylesheet" href="monotome/links/style.css" /> -->
+  <!-- <link rel="stylesheet" href="monotome/links/instance.css"> -->
+  <!-- <link rel="stylesheet" href="monotome/links/reference.css" /> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.0/marked.min.js"
+  integrity="sha512-5553JQkjVvt29nqpQgqj1e6TqlcfYbEQt5a+m+ztrD+G+Lhm0F4CyvfdjwtD6ATDHy5LvCfvsXQL8fzWJDQWkQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="monotome/scripts/marked.js"></script>
+  <script src="monotome/scripts/emitter.js"></script>
+  <script src="monotome/scripts/reader.js"></script>
+  <script src="monotome/scripts/parser.js"></script>
+  <script src="monotome/scripts/indexer.js"></script>
+  <script src="monotome/scripts/visualiser.js"></script>
+
+  <style>
+    /* .main-container {
+      display: flex;
+      transition: 1s ease;
+    } */
+
+    /* .sidebar {
+      width: 20%;
+      transition: 1s ease;
+      position: relative;
+      border-right: 2px solid rgba(0, 0, 0, .4);
+    } */
+
+    /* .content {
+      width: 80%;
+      transition: 1s ease;
+      max-width: 85ch;
+      margin-inline: auto;
+    } */
+
+    /* button {
+      position: absolute;
+      border: none;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .3);
+      left: 100%;
+      top: 3rem;
+      transform: translateX(-50%);
+      cursor: pointer;
+    } */
+
+    /* .navigation {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 8rem;
+      background: var(--white);
+      color: var(--dark);
+      padding: .5rem;
+      margin: .5rem;
+      border-radius: 0px;
+      height: 2rem;
+    } */
+
+    /* General styles for .content */
+    .content {
+      max-width: 85ch;
+      /* Limit the maximum width to 85 characters */
+      margin-inline: auto;
+      /* Center the content horizontally */
+    }
+
+    /* Base layout for larger screens */
+    @media (min-width: 60rem) {
+      body {
+        display: flex;
+        /* Enable a flexbox layout for the body */
+        flex-direction: row;
+        /* Align the children (sidebar and main content) in a row */
+      }
+
+      .sidebar {
+        flex: 0 0 auto;
+        /* Sidebar takes up space as needed without growing or shrinking */
+        width: 20%;
+        /* Optional: Define a width for the sidebar */
+      }
+
+      .main-container {
+        flex: 1 0 0;
+        /* Main container grows to fill remaining space */
+        display: flex;
+        flex-direction: column;
+        /* Keep header, content, and backlinks stacked vertically */
+      }
+    }
+
+    /* Stacked layout for smaller screens */
+    @media (max-width: 60rem) {
+      body {
+        display: flex;
+        /* Enable a flexbox layout */
+        flex-direction: column;
+        /* Stack sidebar and main container vertically */
+      }
+
+      .sidebar {
+        order: 1;
+        /* Place sidebar first */
+        width: 100%;
+        /* Make it take full width */
+      }
+
+      .main-container {
+        order: 2;
+        /* Place the main container second */
+        width: 100%;
+        /* Make it take full width */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="breadcrumb"></div>
+    <details open>
+      <summary>Index</summary>
+      <div class="index"></div>
+    </details>
+  </div>
+
+  <div class="main-container">
+    <!-- <div class="header">
+      <button type="button" id="sidebarCollapse" class="bg-turbo-yellow text-sidebar btn">
+        <i id="collapseIcon" class="fa-arrow-left fas"></i>
+        <span></span>
+      </button>
+    </div> -->
+    <div class="content"></div>
+    <input class="navigation" />
+    <div class="backlinks"></div>
+  </div>
+</body>
+
+</html>
